@@ -4,8 +4,10 @@ const TableHeader = () =>{
     return(
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Job</th>
+                <th>UserId</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Body</th>
             </tr>
         </thead>
     );
@@ -14,8 +16,10 @@ const TableBody = props =>{
     const rows = props.characterData.map((row, index) => {
         return(
             <tr key={index}>
-                <td>{row.name}</td>
-                <td>{row.job}</td>
+                <td>{row.userId}</td>
+                <td>{row.id}</td>
+                <td>{row.title}</td>
+                <td>{row.body}s</td>
             </tr>
         );
     });
