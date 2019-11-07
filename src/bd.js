@@ -1,4 +1,4 @@
-export default [
+export const bd = [
     {
       "userId": 1,
       "id": 1,
@@ -598,5 +598,5 @@ export default [
       "id": 100,
       "title": "at nam consequatur ea labore ea harum",
       "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
-    }
+    },
   ]
