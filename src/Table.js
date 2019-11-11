@@ -13,13 +13,13 @@ const TableHeader = () =>{
     );
 }
 const TableBody = props =>{
-    const rows = props.characterData.map((row, index) => {
+    const rows = props.data.map((row, index) => {
         return(
             <tr key={index}>
                 <td>{row.userId}</td>
                 <td>{row.id}</td>
                 <td>{row.title}</td>
-                <td>{row.body}s</td>
+                <td>{row.body}</td>
             </tr>
         );
     });
@@ -29,12 +29,12 @@ const TableBody = props =>{
 
 class TableFull extends Component {
     render(){
-        const {characterData} = this.props;
+        const {data} = this.props;
 
         return(
             <table>
                 <TableHeader/>
-                <TableBody characterData={characterData} />
+                <TableBody data={data} />
             </table>
         );
     }
