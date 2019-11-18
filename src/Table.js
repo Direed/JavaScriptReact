@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 const TableHeader = () =>{
     return(
         <thead>
@@ -26,7 +25,6 @@ const TableBody = props =>{
 
     return <tbody>{rows}</tbody>;
 }
-
 class TableFull extends Component {
     render(){
         const {data} = this.props;
