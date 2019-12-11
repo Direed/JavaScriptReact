@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 import './App.css';
 import TableFull from './Table';
 import Search from './Search';
+
 class AppAplication extends Component{
   state ={
     data:[],
     search: '',
-    flag: ''
+    flag: '',
   }
   async componentDidMount()
   {
@@ -52,6 +53,8 @@ class AppAplication extends Component{
       }
     })
   }
+ 
+
   render(){
     const filteredData = this.getFilteredData()
     const data=filteredData
